@@ -1,0 +1,399 @@
+#navbar{
+    display:flex;
+    position: relative;
+    justify-content: space-between;
+}
+
+#navbar .nav-list{
+    justify-content:flex-start;
+    align-items: center;
+    padding: 2rem;
+}
+#navbar #logo{
+    justify-content: center;
+    align-items: center;
+    padding:40px 20px;
+}
+#navbar .nav-list-2{
+    justify-content:flex-end;
+    align-items: center;
+    padding: 2rem;
+
+}
+.nav-list li{
+    list-style: none;
+    
+}
+.nav-list{  
+    display:flex;
+    padding:40px 20px;
+}
+.nav-list-2{   
+    display:flex;
+    padding:40px 20px;
+}
+.nav-list-2 li{
+    list-style: none;
+    
+}
+.nav-list li a{
+    display:block;
+    padding:3px 22px;
+    text-decoration: none;
+    border-radius: 20px;
+    color:white;
+    
+    
+    
+}
+.nav-list li a:hover{
+    
+    color:black;
+    background-color: white;
+    
+    
+}
+.nav-list-2 li a{
+    display:block;
+    padding:3px 22px;
+    text-decoration: none;
+    border-radius: 20px;
+    color:white;
+    
+    
+    
+}
+.nav-list-2 li a:hover{
+    
+    color:black;
+    background-color: white;
+    
+    
+}
+#navbar .nav-list .home-li{
+    display: block;
+    color: yellow;
+}
+@media (max-width:570px){
+    #navbar{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #navbar .nav-list{
+        justify-content:space-evenly;
+        align-items: center;
+        padding: 0rem;
+    }
+
+    
+}
+/* home section */
+#home{
+    display: flex;
+    /* padding:187px; */
+    justify-content: center;
+    align-items: center;
+    /* height:222px; */
+    height: 544px;
+
+    
+
+}
+#home::before{
+    content:"";
+    background:url("../foodqualitybg.PNG")no-repeat center center/cover;
+    position: absolute;
+    height:120%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.89;
+    top:0px;
+    left: 0;
+    opacity: 0.89;
+
+} 
+@media (max-width:570px){
+    #home{
+        height:627px;
+    }
+    #home::before{
+        height: 1030px;
+    }
+}
+
+/* .left-home{
+    width: 50%;
+    padding-top: 10rem;
+}
+.right-home{
+    width:50%
+}
+.left-home img{
+    justify-content: center;
+    align-items: center;
+    border-radius: 250px;
+} */
+/* about */
+#about{
+    background: black;
+}
+#aboutimg{
+    padding:3rem;
+}
+@media (max-width:600px){
+    #about .top-padding{
+        padding-top: 0rem;
+    }
+}
+/* food */
+.para{
+    box-sizing: border-box;
+    padding-top:10rem;
+    padding-left: 9rem;
+    margin-right: 22rem;
+    padding-bottom: 4rem;
+  
+}
+.food{
+    display: flex;
+    /* padding:187px; */
+    justify-content: center;
+    align-items: center;
+    /* height:222px; */
+    height: 544px;
+    position: relative;
+
+    
+
+}
+.food::before{
+    content:"";
+    background:url("../foodqualitybg.PNG")no-repeat center center/cover;
+    position: absolute;
+    height:100%;
+    width:100%;
+    z-index: -1;
+} 
+@media (max-width:570px){
+    .food{
+        height: 418px;
+    }
+    .para{
+        padding: 0rem;
+        padding:1rem;
+        margin-right: 0rem;
+    }
+}
+/* food gallery */
+body { 
+    width:100%;  
+    margin:auto; 
+} 
+.gallery { 
+    width:100%; 
+    display:flex; 
+    flex-flow: row wrap; 
+    justify-content: center;
+} 
+.foodgallery::before{
+    content: "";
+    height: 100%;
+
+}
+.box { 
+    flex-basis:20%; 
+    width:100%; 
+    padding:10px; 
+    margin:8px; 
+    /* box-shadow: 1px 1px 1px 1px green;  */
+} 
+.text { 
+    text-align:center; 
+    margin-top:5px; 
+} 
+#gallery-heading{
+    padding: 3rem;
+}
+  
+/* media query used here */ 
+@media only screen and (max-width: 300px) {  
+    .box { 
+        flex-basis: 100%; 
+    } 
+} 
+  
+@media only screen and (max-width:500px) { 
+    .box { 
+        flex-basis: 40%; 
+    } 
+} 
+.foodgallery{
+    position: relative;
+    background: black;
+}
+.foodgallery::before{
+    content:"";
+    background:black;
+    position: absolute;
+    height:100%;
+    width:100%;
+    z-index: -1;
+} 
+/* enjoy */
+.enjoy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 3px solid orange; */
+    position: relative;
+    /* margin: 12rem; */
+    height: 600px;
+}
+/* .enjoy{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid orange;
+    position: relative;
+    margin: 12rem;
+   
+    
+}  */
+.center {
+    margin-top: 10rem;
+    margin: auto;
+    width: 30%;
+    border: 3px solid orange;
+    padding: 30px;
+    justify-content: center0;
+    align-items: center;
+  }
+.enjoy::before{
+    content:"";
+    background:url("../enjoybg.PNG")no-repeat center center/cover;
+    position: absolute;
+    height:100%;
+    width:100%;
+    z-index: -1;
+} 
+@media (max-width: 700px){
+.center {
+    margin-top: 0rem; 
+    margin: auto;
+    width: 90%;
+    border: 3px solid orange;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    }
+}
+
+
+/* utility class */
+.h-yellow{
+    color: yellow;
+}
+.text-white{
+    color: white;
+}
+.col-items-r{
+    padding-top: 13rem;
+}
+.col-items-l{
+    padding: 10rem;
+    /* padding-top: 12rem;
+    padding-bottom: 12rem; */
+
+}
+.menu h1{
+    padding:3rem;
+}
+.menu{
+    height: 695px;
+    background: black;
+}
+.menu::before{
+    content:"";
+    background:black;
+    position: absolute;
+    height:120%;
+    width:100%;
+    z-index: -1;
+}
+@media (max-width:600px){
+    .menu{
+        height:1763px;
+    }
+    .menu::before{
+        
+        height:393%;
+    }
+}
+.bestmeal{
+    background: orange;
+}
+.footer1{
+    background:gray;
+}
+.icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        
+}
+.icons i{
+    padding:1rem;
+}
+.footer-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.footer-list{
+    padding: 2rem;
+    /* padding:40px 20px; */
+    list-style: none;
+    margin-bottom: 0px;
+}
+.footer-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    padding-top: 5rem;
+}
+.footer-list li{
+    display:block;
+    padding:3px 22px;
+    text-decoration: none;
+    color:white;    
+}
+@media (max-width:600px){
+    .footer-list{
+        flex-flow: column;
+        /* flex-wrap: wrap; */
+    }
+}
+.bestmeal::before{
+    content:"";
+    background:black;
+    position: absolute;
+    height:100%;
+    width:100%;
+    z-index: -1;
+}
+.top-padding{
+    padding-top: 6rem;
+}
+.text-orange{
+    color: orange;
+}
+.btn-orange{
+    background: orange;
+}
